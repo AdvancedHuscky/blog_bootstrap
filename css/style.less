@@ -1,5 +1,10 @@
 @bg-blue:#5B83AD;
 @light-blue:@bg-blue+#111;
+@title-active:#ffcc00;
+@sidebar-orange:#f26649;
+@cl-effect-color:#6f8686;
+@cl-effect-before:#ffcc00;
+/*--top header start--*/
 .top-header{
     padding: 0em 2em;
     background: @bg-blue;
@@ -11,6 +16,7 @@ ul.top-nag{
         margin-left: 0;
     }
     a{
+        display: inline-block;
         color: #fff;
         font-size: 0.9em;
         font-weight: 600;
@@ -18,4 +24,136 @@ ul.top-nag{
         padding:20px;
         background: @bg-blue;
     }
+    a.active{
+      color:@title-active;
+    }
 }
+.search-box{
+  float: right;
+  width: 15%;
+  margin-top: 0.6em;
+}
+.b-search{
+  position:relative;
+  border:1px solid @bg-blue;
+  padding:0.5em 0;
+  background:@bg-blue;
+  width:99%;
+  input[type="text"]{
+    width: 85%;
+    outline:none;
+    border:none;
+    padding: 0 0.6em;
+    font-size:0.9em;
+    color:#fff;
+    background:@bg-blue;
+  }
+  input[type="submit"]{
+    background: url(../images/search.png) no-repeat 0px 2px;
+    border: none;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    outline: none;
+    top: 6px;
+    right: 2px;
+  }
+}
+/*--top header end--*/
+/*--left-side nav bar start--*/
+.top-nav{
+  float: left;
+  background-color: @sidebar-orange;
+  width: 15%;
+  padding:3em 1em 95em 1em;
+  .logo a{
+    display:block;
+    h1{
+      color:#fff;
+      font-size:2.5em;
+      font-weight: 700;
+      text-align:center;
+    }
+    h1:hover{
+      text-decoration:none;
+    }
+  }
+  .top-menu{
+    ul{
+      margin-top:9em;
+      li{
+        display:block;
+        color:#fff;
+        text-align:center;
+        margin-bottom:2em;
+        a{
+          color:#fff;
+          font-size:0.9em;
+          font-weight:600;
+          text-transform:uppercase;
+          padding:1em;
+        }
+      }
+    }
+    ul.side-icons{
+      border:none;
+      margin-top: 5em;
+      margin-left:4em;
+      li{
+        list-style-type: none;
+        display:inline-block;
+        margin-right:.3em;
+        a{
+          width:2em;
+          height:2em;
+          display: block;
+          border:none;
+          padding:0;
+        }
+        a:hover{
+          opacity: .4;
+        }
+        a.fb{
+          background:url('../images/icons.png') no-repeat 0px 0px;
+        }
+        a.twitt{
+          background:url('../images/icons.png') no-repeat -26px 0px;
+        }
+        a.goog{
+          background:url('../images/icons.png') no-repeat -52px 0px;
+        }
+        a.drib{
+          background:url('../images/icons.png') no-repeat -78px 0px;
+        }
+      }
+    }
+  }
+}
+.cl-effect-16{
+  a {
+    color: #6f8686;
+    text-shadow: 0 0 1px rgba(111,134,134,0.3);
+  }
+  a::before {
+    color:#ffcc00;
+    content: attr(data-hover);
+    position: absolute;
+    opacity: 0;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+  }
+  a:hover::before,a:focus::before {
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+/*--left-side nav bar end--*/
+
