@@ -4,6 +4,7 @@
 @sidebar-orange:#f26649;
 @cl-effect-color:#6f8686;
 @cl-effect-before:#ffcc00;
+@title-font-size:1.2em;
 /*--top header start--*/
 .top-header{
     padding: 0em 2em;
@@ -18,7 +19,7 @@ ul.top-nag{
     a{
         display: inline-block;
         color: #fff;
-        font-size: 0.9em;
+        font-size: @title-font-size;
         font-weight: 600;
         text-transform: uppercase;
         padding:20px;
@@ -88,7 +89,7 @@ ul.top-nag{
         margin-bottom:2em;
         a{
           color:#fff;
-          font-size:0.9em;
+          font-size:@title-font-size;
           font-weight:600;
           text-transform:uppercase;
           padding:1em;
@@ -104,8 +105,8 @@ ul.top-nag{
         display:inline-block;
         margin-right:.3em;
         a{
-          width:2em;
-          height:2em;
+          width:1.5em;
+          height:1.5em;
           display: block;
           border:none;
           padding:0;
@@ -156,4 +157,48 @@ ul.top-nag{
   }
 }
 /*--left-side nav bar end--*/
-
+/*--main content start--*/
+.main{
+  float: right;
+  width: 75%;
+  padding: 0;
+  .banner-section{
+    width: 100%;
+    float: left;
+    padding:2em 1em 1.5em 1em;
+    border-right: none;
+    h3.title{
+      color:#333;
+      font-size:2em;
+      text-align: left;
+      margin-bottom:.8em;
+      i{
+        font-size:.7em;
+        color:#f26649;
+      }
+    }
+    .carousel-indicators-position{
+      bottom:100% !important;
+      left:94% !important;
+      li{
+        width: 1em !important;
+        height: 1em !important;
+        background: @sidebar-orange !important;
+      }
+      .active{
+        width: 1.1em !important;
+        height: 1.1em !important;
+        background:#5B83AD !important;
+      }
+    }
+    .banner{
+      .b-bottom{
+        margin-top: 1em;
+        p a{
+          margin:0 .2em;
+        }
+      }
+    }
+  }
+}
+/*--main content end--*/
