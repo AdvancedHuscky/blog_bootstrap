@@ -49,7 +49,7 @@ label{
         float: left;
         background-color: #f26649;
         width: 15%;
-        padding:3em 1em 89em 1em;
+        padding:3em 1em 88em 1em;
     }
     .main {
         float: right;
@@ -87,7 +87,7 @@ label{
         background-color: #f26649;
         width: 15%;
         height:auto;
-        padding:3em 1em 89em 1em;
+        padding:3em 1em 88em 1em;
     }
     .main {
         float: right;
@@ -117,7 +117,7 @@ label{
         background-color: #f26649;
         width: 15%;
         height:auto;
-        padding:3em 1em 89em 1em;
+        padding:3em 1em 88em 1em;
     }
     .main {
         float: right;
@@ -188,12 +188,30 @@ label{
         padding-right: 0;
         padding-left: 0px;
     }
+    .b-search input[type="submit"]{
+        background: url(../images/search.png) no-repeat 0px 2px;
+        border: none;
+        height: 2em;
+        width: 2em;
+        position: absolute;
+        outline: none;
+        top: .7em;
+        right: .7em;
+    }
 }
 @media(max-width:769px){
+    .top-nag a{
+        font-weight: 500 !important;
+        padding:.5em !important;
+        font-size: .8em !important;
+    }
     .top-nav {
         float: left;
         width: 25%;
         padding: 3em 1em 197.47em 1em;
+    }
+    .top-nav{
+        width:100%;
     }
     .banner-section{
         width: 100%;
@@ -209,9 +227,6 @@ label{
         float: left;
         width: 50%;
     }
-    .img-responsive{
-        width: 100%;
-    }
     .media{
         width: 100%;
     }
@@ -220,9 +235,15 @@ label{
         width: 25%;
         padding: 3em 1em 209.7em 1em;
     }
+    .search-box{
+        width: 100% !important;
+    }
+    .b-search{
+        padding: 0 !important;
+    }
     .b-search input[type="text"]{
-        width: 70%;
-        height:2em;
+        width: 100%;
+        height:1.8em;
         outline:none;
         border:none;
         padding: 0 0.6em;
@@ -236,31 +257,15 @@ label{
         width: 2em;
         position: absolute;
         outline: none;
-        top: .7em;
-        right: 1.2em;
+        top: .11em;
+        right: .5em;
     }
     .top-nav.services {
         float: left;
         width: 25%;
         padding: 1em 1em 209.98em 1em;
     }
-    .top-nav.sing-page {
-        float: left;
-        width: 25%;
-        padding: 3em 1em 228.98em 1em;
-    }
-    .cate-grid {
-        background-size: 100%;
-        margin: 0 10px;
-        width: 44%;
-        padding: 0;
-        margin-bottom: 3em;
-    }
-    .top-nav.gallery-sec {
-        float: left;
-        width: 25%;
-        padding: 3em 1em 60.7em 1em;
-    }
+
     .top-nav .top-menu ul.side-icons{
         margin-left: 2.5em;
     }
