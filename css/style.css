@@ -16,7 +16,7 @@ body a {
     src: url(../fonts/Montserrat-Regular.ttf)format('truetype');
 }
 a:hover,h5.inner.two a:hover{
-    text-decoration:none;
+    text-decoration:none !important;
     color:#f26649;
 }
 input[type="button"],input[type="submit"],li.parallelogram{
@@ -43,6 +43,225 @@ ul{
 label{
     margin:0;
 }
-h3.tittle{
-    padding:1em 0 !important;
+/*--responsive--*/
+@media(max-width: 2000px){
+    .top-nav{
+        float: left;
+        background-color: #f26649;
+        width: 15%;
+        padding:3em 1em 89em 1em;
+    }
+    .main {
+        float: right;
+        width: 75%;
+        padding: 0;
+    }
+    .banner-section {
+        width: 75%;
+        float: left;
+        padding: 2em 1em 1.5em 1em;
+        border-right: none;
+    }
+    .banner-right-text {
+        float: right;
+        width: 25%;
+        padding: 1em 1em 1.5em 1em;
+    }
+    .footer{
+        margin-left:-1.1em;
+        margin-right:-6em !important;
+        z-index:600;
+    }
+    .copy{
+        margin-left:-30em;
+    }
+    .top-nav .top-menu ul.side-icons {
+        border: none;
+        margin-top: 5em;
+        margin-left: 7.5em;
+    }
+}
+@media(max-width: 1600px){
+    .top-nav{
+        float: left;
+        background-color: #f26649;
+        width: 15%;
+        height:auto;
+        padding:3em 1em 89em 1em;
+    }
+    .main {
+        float: right;
+        width: 75%;
+        padding: 0;
+    }
+    .banner-section {
+        width: 75%;
+        float: left;
+        padding: 2em 1em 1.5em 1em;
+        border-right: none;
+    }
+    .banner-right-text {
+        float: right;
+        width: 25%;
+        padding: 1em 1em 1.5em 1em;
+    }
+    .top-nav .top-menu ul.side-icons {
+        border: none;
+        margin-top: 5em;
+        margin-left: 7.5em;
+    }
+}
+@media(max-width: 1200px){
+    .top-nav{
+        float: left;
+        background-color: #f26649;
+        width: 15%;
+        height:auto;
+        padding:3em 1em 89em 1em;
+    }
+    .main {
+        float: right;
+        width: 75%;
+        padding: 0;
+    }
+    .banner-section {
+        width: 75%;
+        float: left;
+        padding: 2em 1em 1.5em 1em;
+        border-right: none;
+    }
+    .banner-right-text {
+        float: right;
+        width: 25%;
+        padding: 1em 1em 1.5em 1em;
+    }
+    .top-nav .top-menu ul.side-icons{
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+}
+@media (max-width:991px) {
+    .search-box {
+        float: right;
+        width: 31%;
+        margin-top: 0.6em;
+    }
+
+    .top-nav {
+        float: left;
+        width: 25%;
+        padding: 3em 1em 227.56em 1em;
+    }
+
+    .banner-right-text {
+        float: right;
+        width: 100%;
+        padding: 1em 1em 1.5em 1em;
+    }
+
+    .main {
+        float: right;
+        width: 75%;
+        padding: 0;
+    }
+
+    .banner-section {
+        width: 100%;
+        float: left;
+        padding: 2em 1em 1.5em 1em;
+        border-right: none;
+    }
+
+    .top-text {
+        padding: 0;
+        width: 49%;
+        float: left;
+        margin-right: 1%;
+    }
+
+    ul.top-nag li a {
+        font-size: 0.9em;
+        padding: 20px 13px;
+    }
+
+    .top-text.two {
+        padding-right: 0;
+        padding-left: 0px;
+    }
+}
+@media(max-width:769px){
+    .top-nav {
+        float: left;
+        width: 25%;
+        padding: 3em 1em 197.47em 1em;
+    }
+    .banner-section{
+        width: 100%;
+        float: left;
+        padding:0 1em 1.5em 1em;
+        border-right: none;
+    }
+    .banner-right-text{
+        width:100%;
+        float:left;
+    }
+    .editor-pics{
+        float: left;
+        width: 50%;
+    }
+    .img-responsive{
+        width: 100%;
+    }
+    .media{
+        width: 100%;
+    }
+    .top-nav.about {
+        float: left;
+        width: 25%;
+        padding: 3em 1em 209.7em 1em;
+    }
+    .b-search input[type="text"]{
+        width: 70%;
+        height:2em;
+        outline:none;
+        border:none;
+        padding: 0 0.6em;
+        font-size:0.9em;
+        color:#fff;
+    }
+    .b-search input[type="submit"]{
+        background: url(../images/search.png) no-repeat 0px 2px;
+        border: none;
+        height: 2em;
+        width: 2em;
+        position: absolute;
+        outline: none;
+        top: .7em;
+        right: 1.2em;
+    }
+    .top-nav.services {
+        float: left;
+        width: 25%;
+        padding: 1em 1em 209.98em 1em;
+    }
+    .top-nav.sing-page {
+        float: left;
+        width: 25%;
+        padding: 3em 1em 228.98em 1em;
+    }
+    .cate-grid {
+        background-size: 100%;
+        margin: 0 10px;
+        width: 44%;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+    .top-nav.gallery-sec {
+        float: left;
+        width: 25%;
+        padding: 3em 1em 60.7em 1em;
+    }
+    .top-nav .top-menu ul.side-icons{
+        margin-left: 2.5em;
+    }
 }

@@ -72,7 +72,8 @@ ul.top-nag{
   float: left;
   background-color: @sidebar-orange;
   width: 15%;
-  padding:3em 1em 89.31em 1em;
+  height:100%;
+  padding:3em 1em 1em 1em;
   .logo a{
     display:block;
     h1{
@@ -104,33 +105,16 @@ ul.top-nag{
     }
     ul.side-icons{
       border:none;
-      margin-top: 5em;
-      margin-left:4em;
       li{
         list-style-type: none;
         display:inline-block;
-        margin-right:.3em;
-        a{
-          width:1.5em;
-          height:1.5em;
-          display: block;
-          border:none;
-          padding:0;
+        margin-right:.8em;
+        i{
+          font-size:2em;
         }
-        a:hover{
-          opacity: .4;
-        }
-        a.fb{
-          background:url('../images/icons.png') no-repeat 0px 0px;
-        }
-        a.twitt{
-          background:url('../images/icons.png') no-repeat -26px 0px;
-        }
-        a.goog{
-          background:url('../images/icons.png') no-repeat -52px 0px;
-        }
-        a.drib{
-          background:url('../images/icons.png') no-repeat -78px 0px;
+        i:hover{
+          cursor: pointer;
+          color: #fff - #222;
         }
       }
     }
@@ -169,7 +153,6 @@ ul.top-nag{
   width: 75%;
   padding: 0;
   .banner-section{
-    width: 67%;
     float: left;
     padding:0 1em 1.5em 1em;
     border-right: none;
@@ -228,8 +211,15 @@ ul.top-nag{
   }
   .banner-right-text{
     float: right;
-    width: 33%;
     padding:0 1em 1.5em 1em;
+    .general-news{
+      .edit-pics{
+        margin-top: 3em;
+        .editor-pics{
+          padding: 0 !important;
+        }
+      }
+    }
   }
 }
 /*--main content end--*/
