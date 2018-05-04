@@ -41,7 +41,12 @@
                 <a href="index.html"><h1>Blogger</h1></a>
             </div>
             <div class="top-menu">
-                <span class="menu"> </span>
+                <span class="glyphicon glyphicon-align-justify nav-list-button"></span>
+                <script>
+                    $('.nav-list-button').click(function () {
+                        $(this).siblings().toggle();
+                    });
+                </script>
                 <ul class="cl-effect-16">
                     <li><a class="active" href="index.html" data-hover="HOME">Home</a></li>
                     <li><a href="about.html" data-hover="About">About</a></li>
